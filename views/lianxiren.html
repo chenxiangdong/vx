@@ -1,0 +1,38 @@
+<dl ng-controller="lianxirenCtrl" class="lianxiren">
+  <dd>
+    <a>
+      <div class="icon new"></div>
+      <p>新的朋友</p>
+    </a>
+  </dd>
+  <dd>
+    <a>
+      <div class="icon qun"></div>
+      <p>群聊</p>
+    </a>
+  </dd>
+  <dd>
+    <a>
+      <div class="icon bian"></div>
+      <p>标签</p>
+    </a>
+  </dd>
+  <dd>
+    <a>
+      <div class="icon gong"></div>
+      <p>公众号</p>
+    </a>
+  </dd>
+  <div class="key" ng-repeat="(i,v) in lianxi">
+    <span>{{v.key}}</span>
+    <div ng-repeat=" x in v.people">
+      <a href="#/ziliao/{{i}}{{$index}}">
+        <img ng-src="{{x.img}}" alt="">
+        <p>{{x.name}}</p>
+      </a>
+    </div>
+  </div>
+  <ul>
+    <li ng-repeat="v in lianxi">{{v.key}}</li>
+  </ul>
+</dl>

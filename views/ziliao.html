@@ -1,0 +1,31 @@
+<div class="kk" ng-controller="ziliaoCtrl">
+  <div class="toubu">
+    <a href="#/lianxiren" class="wx">←</a>
+    <span class="xingming">详细资料</span>
+    <span class=" icon ziliao">...</span>
+  </div>
+  <div class="beij">
+    <div class="toum">
+      <img src="{{list.img}}" alt="">
+      <span>{{list.name}}</span>
+      <span>昵称:{{list.nic}}</span>
+    </div>
+    <div class="beiz">设置备注和标签</div>
+    <ul class="pyq">
+      <li class="diqu">
+        <span>地区
+          <p>{{list.diqu}}</p>
+        </span>
+      </li>
+      <li class="xiangc">
+        <div>
+          <span>个人相册</span>
+          <ul>
+            <li><img src="" alt=""></li>
+          </ul>
+        </div>
+      </li>
+      <li class="gengd"><span>更多</span></li>
+    </ul>
+    <div class="faxx"><a href="">发消息</a></div>
+  </div>

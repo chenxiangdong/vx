@@ -1,0 +1,13 @@
+<ul ng-controller="weixinCtrl" class="weixin">
+  <li ng-repeat="v in xinxi"ng-class="{'showDel':show}" ng-swipe-left="show=true" ng-swipe-right="show=false">
+    <div>
+      <a href="#/xiaoxi/{{$index}}"></a>
+      <img ng-src="{{v.img}}" alt="">
+      <p class="name">{{v.name}}</p>
+      <p class="content">{{v.xiaoxi}}</p>
+      <span class="time">{{v.time}}</span>
+      <span class="sound">{{v.sound}}</span>
+    </div>
+    <span class="del" ng-click="del($index)">删除</span>
+  </li>
+</ul>

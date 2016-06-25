@@ -1,0 +1,23 @@
+<div class="kk" ng-controller="xiaoxiCtrl">
+  <div class="toubu">
+    <a href="#/weixin" class="wx">←</a>
+    <span class="xingming">{{list.name}}</span>
+    <span class=" icon ziliao"></span>
+  </div>
+
+    <ul class="duimian">
+      <li ng-repeat="v in list.content" ng-class="{'me':v.isme}">
+        <img ng-if="!v.isme" ng-src="{{list.img}}" alt="">
+        <img ng-if="v.isme" src="img/a1.jpg" alt="">
+        <p>{{v.jilu}}</p>
+      </li>
+    </ul>
+
+
+  <div class="faxiaoxi">
+    <span class="sy">声音</span>
+    <input type="text">
+    <span class="bq iconfont"></span>
+    <span class="fs">+</span>
+  </div>
+</div>
